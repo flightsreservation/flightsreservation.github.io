@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.left_bg{
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: #faca04;
+}
+.right_bg{
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    top: 0;
+    right: 0;
+    background-color: #3c474f;
+}
+.fixed_header{
+    z-index: 9999;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    max-width: 1200px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/b4ca6577-header-bg_10000000w80230a7000028.png");
+    background-size: cover;
+    background-position:-10px 0;
+}
+.header_container{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+.logo{
+    flex: 1;
+    padding: 0 0 0 32px;
+}
+.logo img{
+    display: block;
+    margin-top: -5px;
+}
+.callus{
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 18px;
+    color: rgb(251, 203, 4);
+    font-style: normal;
+    line-height: 80px;
+    padding-right: 22px;
+}
+.callus span{
+    color: #ffffff;
+}
+.numtoplink a{
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    border-style: none;
+    border-radius: 0px;
+    width: 282px;
+    height: 80px;
+    line-height: 80px;
+    background: rgba(251,203,4,1);
+    box-shadow: none;
+    text-shadow: none;
+    color: #1569a4;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Poppins;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+.numtoplink a:hover {
+    background: rgba(21,105,164,1);
+    box-shadow: none;
+    color: #EEB903;
+}
+.numtoplink a:active {
+    background: rgba(226,172,3,1);
+    box-shadow: none;
+    color: #1569a4;
+}
+.noholdphone{
+    display: none;
+}
+.main_section{
+    margin-top: 80px;
+    background: rgba(7,24,64,0.86);
+    background-image: url(https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/bfa3d491-airplane-flip_10000001e00l6000062014.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 508px;
+    position: relative;
+}
+.blockbg{
+    position: absolute;
+    background: rgba(7,24,64,0.86);
+    height: 508px;
+    width: 100%;
+}
+.main_section_container{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.main_title{
+    text-align: center;
+    padding-top: 5px;
+}
+.main_word{
+    color: rgb(61, 175, 255);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 33px;
+    padding-right: 3px;
+}
+.main_paragraph{
+    color: rgb(122, 200, 255);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 33px;
+}
+.neetto{
+    font-weight: 400;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    max-width: 750px;
+    letter-spacing: -0.05rem;
+    margin-top: 60px;
+    line-height: 1.25;
+}
+.callusnowtext{
+    font-weight: 400;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    max-width: 750px;
+    letter-spacing: -0.05rem;
+    margin-top: 20px;
+    line-height: 1.25;
+}
+.nowait{
+    color: #EEB903;
+    font-weight: 700;
+}
+.main_big_number{
+    display: block;
+    border-style: none;
+    border-radius: 38px;
+    z-index: 45;
+    width: 608px;
+    height: 118px;
+    position: absolute;
+    background: rgba(251,203,4,1);
+    box-shadow: inset 0px 1px 0px #ffdd50, inset 0 -1px 2px #c7a103;
+    text-shadow: none;
+    color: #1569A4;
+    font-size: 68px;
+    line-height: 118px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    margin-top: 50px;
+}
+.main_big_number:hover{
+    background: rgba(255,255,255,1);
+    box-shadow: inset 0px 1px 0px #ffffff, inset 0 -1px 2px #cccccc;
+    color: #000000;
+}
+.main_big_number:active{
+    background: rgba(226,172,3,1);
+    box-shadow: inset 0px 2px 4px #624a01;
+    color: #1569A4;
+}
+.ladiewoman{
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}
+.oneminute{
+    height: 75px;
+    background: rgba(21,105,164,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.current{
+    font-weight: 400;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    line-height: 1;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.lessthan{
+    background-color: rgb(4, 53, 88);
+    font-weight: 400;
+    color: rgb(251, 203, 4);
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1;
+    padding: 5px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.next_section{
+    margin-top: 25px;
+}
+.next_section_container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.onlinebook{
+    border: 1px solid #cccccc;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0 0 0;
+    height: 115px;
+    margin-right: 92px;
+}
+.weaccept{
+    border: 1px solid #cccccc;
+    height: 100%;
+    position: relative;
+    height: 115px;
+    padding: 0 5px;
+}
+.brands{
+    display: flex;
+    justify-content: center;
+}
+.cardtitle{
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0 10px;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(61, 72, 79);
+    font-style: normal;
+}
+.amazonbrand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 50px;
+}
+.amazonbrand img{
+    display: block;
+    width: 148px;
+    height: 55px;
+}
+.amazonbrand span{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(61, 72, 79);
+    font-style: normal;
+    padding-top: 7px;
+}
+.arcbrand{
+    padding-right: 15px;
+}
+.arcbrand img{
+    display: block;
+}
+.trustedbrand{
+    padding-right: 35px;
+}
+.trustedbrand span{
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+    font-style: normal;
+    line-height: 1.2;
+}
+.weacceptcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0 70px;
+}
+.cc1{
+    margin-bottom: 5px;
+}
+.center_main{
+    margin-top: 46px;
+}
+.center_main_container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+}
+.center_main_title{
+    font-weight: 700;
+    font-size: 28px;
+    color: rgb(21, 105, 164);
+    font-style: normal;
+    padding:0 23px;
+}
+.center_3_parts{
+    display: flex;
+    padding:0 23px;
+    margin-top: 15px;
+}
+.center_3_parts div{
+    flex: 1;
+}
+.center_3_parts div:not(:last-child){
+    padding-right: 80px;
+}
+.center_3_parts div ul li{
+    list-style: none;
+    font-weight: 400;
+    font-family: Poppins;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    line-height: 1.15;
+}
+.customersupport{
+    margin-top: 35px;
+}
+.customersupporttext,.comparflighttext{
+    padding:0 23px;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    margin-top: 10px;
+}
+.comparflight{
+    margin-top: 20px;
+}
+.getbest{
+    font-weight: 500;
+}
+.gethelp_section{
+    display: block;
+    background: rgba(12,31,76,0.87);
+    background-image: url("https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/a915f501-airplane-6_1000000000000000000014.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 35px;
+}
+.gethelpbg{
+    position: absolute;
+    background: rgba(12,31,76,0.87);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.gethelp_section_container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+.gethelpcontent{
+    position: relative;
+}
+.gethelptitle{
+    padding-top: 35px;
+    font-weight: 600;
+    font-size: 44px;
+    color: rgb(251, 203, 4);
+    font-style: normal;
+}
+.gethelpmintitle{
+    font-weight: 500;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+.helpbutton{
+    display: block;
+    border-style: none;
+    border-radius: 38px;
+    z-index: 22;
+    width: 491px;
+    height: 100px;
+    line-height: 100px;
+    background: rgba(251,203,4,1);
+    box-shadow: inset 0px 1px 0px #ffdd50, inset 0 -1px 2px #c7a103;
+    text-shadow: none;
+    color: #1569A4;
+    font-size: 56px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-bottom: 27px;
+}
+.helpbutton:hover{
+    background: rgba(21,105,164,1);
+    box-shadow: inset 0px 1px 0px #5190bd, inset 0 -1px 2px #0e4871;
+    color: #EEB903;
+}
+.helpbutton:active{
+    background: rgba(226,172,3,1);
+    box-shadow: inset 0px 2px 4px #624a01;
+    color: #1569A4;
+}
+.wearehelp{
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    padding-bottom: 35px;
+}
+.wearehelp span{
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(251, 203, 4);
+    font-style: italic;
+}
+.top_footer{
+    text-align: center;
+    margin: 15px 0 30px 0;
+}
+.top_footer a{
+    display: block;
+    border-style: none;
+    border-radius: 38px;
+    z-index: 56;
+    background: rgba(251,203,4,0);
+    box-shadow: none;
+    text-shadow: none;
+    color: #000000;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    text-decoration: none;
+}
+.bottom_footer{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.bottom_footer a{
+    border-style: none;
+    border-radius: 38px;
+    z-index: 54;
+    background: rgba(251,203,4,0);
+    box-shadow: none;
+    text-shadow: none;
+    color: #000000;
+    line-height: 17px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* START MOBILE SECTION */
+
+.mobile_section{
+    margin-top: 150px;
+    display: none;
+}
+.mobile_flight{
+    display: block;
+    background: rgba(4,53,88,0.74);
+    background-image: url("https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/bfa3d491-airplane-flip_10xc0m80xc0kq00001g014.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 199px;
+    position: relative;
+}
+.mobile_flightbg_blocker{
+    position: absolute;
+    background: rgba(4,53,88,0.74);
+    height: 199px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.mobile_flight_text{
+    z-index: 2;
+    position: relative;
+}
+.mobile_flight_text h1{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.mobile_modifa{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.mobile_info_mobile{
+    display: block;
+    background: rgba(7,76,125,1);
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.mobile_info_container{
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.mobile_our{
+    font-weight: 400;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    line-height: 1.2;
+}
+.mobile_call{
+    font-weight: 400;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 1.2;
+}
+.mobile_call span{
+    color: #EEB903;
+    font-weight: 700;
+}
+.mobile_steps{
+    margin-top: 25px;
+}
+.mobile_steps span{
+    color: #ffffff;
+    display: block;
+    font-weight: 500;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    line-height: 1.2;
+    padding-left: 15px;
+}
+.mobile_call_btn{
+    display: block;
+    border-style: none;
+    border-radius: 20px;
+    z-index: 49;
+    width: 306px;
+    height: 76px;
+    background: rgba(251,203,4,1);
+    box-shadow: inset 0px 1px 0px #ffdd50, inset 0 -1px 2px #c7a103;
+    text-shadow: none;
+    color: #074C7D;
+    font-size: 36px;
+    line-height: 76px;
+    font-weight: 800;
+    font-family: Poppins;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.mobile_timer{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.mobile_timer span{
+display: block;
+}
+.timemobile{
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 5px;
+}
+.timeless{
+    color: rgb(251, 203, 4);
+    background: #000;
+    font-size: 22px;
+}
+
+/* END MOBILE SECTION */
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1000px){
+    .main_word,.main_paragraph{
+        font-size: 20px;
+    }
+    .neetto,.callusnowtext{
+        padding-left: 15px;
+        z-index: 2;
+        position: relative;
+    }
+    .main_big_number{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .fixed_header{
+        background-position: -100px 0;
+    }
+    .onlinebook{
+        margin-right: 15px;
+    }
+    .brands{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .onlinebook{
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:800px){
+    .mobile_section{
+        display: block;
+    }
+    .left_bg,.right_bg{
+        display: none;
+    }
+    .fixed_header{
+        background-image: none;
+        background-color: #3c474f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header, .fixed_header, .header_container{
+        height: 150px;
+    }
+    .header_container{
+        flex-direction: column;
+        width: 332px;
+        background: #fbcb04;
+    }
+    .logo{
+        padding: 0;
+        padding: 10px 0 0 0;
+        flex: none;
+    }
+    .logo img{
+        width: 189px;
+        height: 59px;
+    }
+    .callus{
+        display: none;
+    }
+    .numtoplink a{
+        display: block;
+        border-style: none;
+        border-radius: 5px;
+        z-index: 20;
+        width: 280px;
+        height: 52px;
+        background: rgba(21,105,164,1);
+        box-shadow: none;
+        text-shadow: none;
+        color: #FBCB04;
+        font-size: 32px;
+        line-height: 52px;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        background-repeat: no-repeat;
+        margin-top: 5px;
+    }
+    .noholdphone{
+        display: block;
+        font-weight: 600;
+        color: rgb(4, 53, 88);
+    }
+    .main_section{
+        margin-top: 150px;
+        display: none;
+    }
+    .oneminute{
+        display: none;
+    }
+    .main_title{
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main_word{
+        color: #ffffff;
+    }
+    .main_paragraph{
+        color: #ffffff;
+    }
+    .onlinebook{
+        flex-direction: column;
+        height: auto;
+        padding: 30px 0 20px 0;
+    }
+    .amazonbrand{
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .arcbrand,.trustedbrand{
+        padding: 0;
+    }
+    .trustedbrand{
+        margin-top: 20px;
+    }
+    .center_3_parts{
+        flex-direction: column;
+    }
+    .gethelptitle{
+        font-size: 28px;
+    }
+    .gethelpmintitle{
+        margin-top: 15px;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .gethelpcontent{
+        padding: 0 15px;
+    }
+    .gethelptitle {
+        font-size: 25px;
+    }
+    .gethelpmintitle {
+        font-size: 25px;
+        padding: 0 15px;
+    }
+    .helpbutton{
+        font-size: 35px;
+        width: auto;
+    }
+    .wearehelp{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AirTickets</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).keydown(function(event){
+            if(event.keyCode==123){
+                return false;
+            }
+            else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+                    return false;
+            }
+        });
+
+        $(document).on("contextmenu",function(e){        
+        e.preventDefault();
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && 
+                (e.keyCode === 67 || 
+                e.keyCode === 86 || 
+                e.keyCode === 85 || 
+                e.keyCode === 117)) {
+                return false;
+            } else {
+                return true;
+            }
+        };
+        $(document).keypress("u",function(e) {
+            if(e.ctrlKey){
+                return false;
+            } else{
+                return true;
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="left_bg"></div>
+        <div class="right_bg"></div>
+
+        <div class="fixed_header">
+            <div class="header_container">
+                <div class="logo">
+                    <img src="https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/3ec2f05d-airtickets-logo_105901n000000000000028.png" alt="">
+                </div>
+                <div class="callus">
+                    <p>CALL US TOLL FREE <span>|</span> 24/7</p>
+                </div>
+                <div class="numtoplink">
+                    <a href="tel:++1(833) 844-0983">(833) 844-0983</a>
+                </div>
+                <div class="noholdphone">
+                    <span>NO HOLD TIMES - CLICK TO CALL NOW!</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main_section">
+        <div class="blockbg"></div>
+        <div class="main_section_container">
+            <h1 class="main_title"><span class="main_word">AirTickets:</span> <span class="main_paragraph">Reservations, Cancellations & Flight Changes</span></h1>
+            <div class="">
+                <p class="neetto">Need to book or change a current flight? Our team is standing by 24/7 to provide you with stress free booking experience.  </p>
+                <p class="callusnowtext">Call us now, there are <span class="nowait">NO WAIT TIMES</span> and we can assist you with any of your airline flight needs in just minutes!</p>
+                <a href="tel:++11(833) 844-0983" class="main_big_number"> (833) 844-0983</a>
+            </div>
+            <img class="ladiewoman" src="https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/9678ad76-customer-rep-31295872_10cr0bw000000000000028.png" alt="">
+        </div>
+    </section>
+
+    <div class="oneminute">
+        <span class="current">Current Wait Time:</span>
+        <span class="lessthan">Less than 01:00 minute</span>
+    </div>
+
+    <div class="mobile_section">
+        <div class="mobile_flight">
+            <div class="mobile_flightbg_blocker"></div>
+            <div class="mobile_flight_text">
+                <h1>AirTickets: Reservations, Cancellations & Flight Changes</h1>
+            </div>
+            <img class="mobile_modifa" src="https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/9678ad76-customer-rep-31295872_104303s000000000000028.png" alt="">
+        </div>
+
+        <div class="mobile_info_mobile">
+            <div class="mobile_info_container">
+                <p class="mobile_our">Our operators are standing by 24 hours a day to provide you with stress free help with airline customer service. </p>
+                <p class="mobile_call">Call us now, there are <span>NO HOLD TIMES</span> and we can assist you with any of your airline flight needs in just minutes!</p>
+                <div class="mobile_steps">
+                    <span>• New Reservations </span>
+                    <span>• Flight Cancellations</span>
+                    <span>• Flight Changes</span>
+                </div>
+                <a href="tel:+1(833) 844-0983" class="mobile_call_btn"> (833) 844-0983</a>
+                <div class="mobile_timer">
+                    <span class="timemobile">Current Wait Time:</span>
+                    <span class="timeless">Less than 01:00 minute</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="next_section">
+        <div class="next_section_container">
+            <div class="brands">
+                <div class="onlinebook">
+                    <div class="amazonbrand">
+                        <img src="https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/250bdeea-amazon-web-services_104401j000000000000028.png" alt="">
+                        <span>GUARANTEED 100% SECURE</span>
+                    </div>
+                    <div class="arcbrand">
+                        <img src="https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/a89cc3a0-arc-logo-grey_104g019000000000000014.png" alt="">
+                    </div>
+                    <div class="trustedbrand">
+                        <span>INDUSTRY</span>
+                        <span>TRUSTED</span> 
+                        <span>COMPANY</span>
+                    </div>
+                    <span class="cardtitle">Secure Online Booking</span>
+                </div>
+                <div class="weaccept">
+                    <div class="weacceptcontainer">
+                        <img class="cc1" src="https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/22e7348a-credit-cards_100000004000z000000028.png" alt="">
+                        <img class="cc2" src="https://d9hhrg4mnvzow.cloudfront.net/info.air-tickets.us/dlt/22e7348a-credit-cards_100000005500z03z000028.png" alt="">
+                    </div>
+                    <span class="cardtitle">Cards We Accept</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center_main">
+        <div class="center_main_container">
+            <div>
+                <h2 class="center_main_title">AIRLINES SERVICED</h2>
+                <div class="center_3_parts">
+                    <div>
+                        <ul>
+                            <li>United Airlines</li>
+                            <li>Delta Airlines</li>
+                            <li>Volaris Airlines</li>
+                            <li>Allegiant Airlines</li>
+                            <li>Spirit Airlines</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>British Airways</li>
+                            <li>American Airlines</li>
+                            <li>Air Canada</li>
+                            <li>Alaska Airlines</li>
+                            <li>Frontier Airlines</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Southwest Airlines</li>
+                            <li>Qatar Airlines</li>
+                            <li>Emirates Airlines</li>
+                            <li style="opacity: 0;">_</li>
+                            <li style="font-weight: 600;">PLUS MANY MORE...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="customersupport">
+                <h2 class="center_main_title">24/7 CUSTOMER SUPPORT</h2>
+                <p class="customersupporttext">We’re happy to help with New Reservations, Cancellations, and Flight Change questions. Our experienced customer success representatives can assist you with your new or upcoming flight 24/7. <b>NO WAIT TIMES</b> to book flights with almost any airline.</p>
+            </div>
+            <div class="comparflight">
+                <h2 class="center_main_title">COMPARE FLIGHT COSTS</h2>
+                <p class="comparflighttext"><span class="getbest">Get the best deals on flights anywhere in the world.</span> We can help you navigate the terms of each airline before booking, so you can book the flight you need with a worry free guarantee.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gethelp_section">
+        <div class="gethelp_section_container">
+            <div class="gethelpbg"></div>
+            <div class="gethelpcontent">
+                <h1 class="gethelptitle">Get Help with Your New or Upcoming Flight... FAST!</h1>
+                <p class="gethelpmintitle">New Reservations, Flight Cancellations & Flight Changes</p>
+                <a href="tel:+1(833) 844-0983" class="helpbutton">(833) 844-0983</a>
+                <p class="wearehelp">We are Currently Experiencing <span>NO HOLD</span> Times!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!--
+
+            <div class="top_footer">
+                <a href=""><span>Home | More Flight Deals</span></a>
+            </div>
+
+        -->
+        
+        <div class="bottom_footer">
+		 <a href="https://flytickets.us/"><span>Home</span></a>
+            <a href="terms.html"><span>Terms and Conditions</span></a>
+            <a href="policy.html"><span>Privacy Policy</span></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
